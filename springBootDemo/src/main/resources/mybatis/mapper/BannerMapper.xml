@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springBootDemo.learn.dao.BannerMapper">
+  <resultMap id="BaseResultMap" type="com.example.springBootDemo.learn.domain.Banner">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="task_id" jdbcType="INTEGER" property="taskId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="pic_url" jdbcType="VARCHAR" property="picUrl" />
+    <result column="is_recommended" jdbcType="TINYINT" property="isRecommended" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+
+
+
+</mapper>

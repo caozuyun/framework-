@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springBootDemo.learn.dao.AppMenuMapper">
+  <resultMap id="AppMenuResultMap" type="com.example.springBootDemo.learn.domain.AppMenu">
+    <id column="id"  property="id" />
+    <result column="name"  property="name" />
+    <result column="picUrl"  property="picUrl" />
+    <result column="relationModel"  property="relationModel" />
+    <result column="type"  property="type" />
+    <result column="orderMethod"  property="orderMethod" />
+    <result column="isRecommended"  property="isRecommended" />
+    <result column="menuType"  property="menuType" />
+  </resultMap>
+
+  <select id="queryAppMenus" resultMap="AppMenuResultMap">
+    SELECT
+      a.id,
+      a.`name`,
+      a.pic_url AS picUrl,
+      a.relation_model AS relationModel,
+      a.type,
+      a.order_method AS orderMethod,
+      a.is_recommended AS isRecommended,
+      a.menu_type AS menuType
+  FROM
+      `app_menu` a
+  </select>
+
+</mapper>

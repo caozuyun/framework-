@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springBootDemo.learn.dao.TaskInfoMapper">
+  <resultMap id="BaseResultMap" type="com.example.springBootDemo.learn.domain.TaskInfo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="limit_num" jdbcType="INTEGER" property="limitNum" />
+    <result column="profit" jdbcType="INTEGER" property="profit" />
+    <result column="ratio" jdbcType="INTEGER" property="ratio" />
+    <result column="coin" jdbcType="INTEGER" property="coin" />
+    <result column="limit_coin" jdbcType="INTEGER" property="limitCoin" />
+    <result column="is_default_rate" jdbcType="TINYINT" property="isDefaultRate" />
+    <result column="tag" jdbcType="VARCHAR" property="tag" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="is_recommended" jdbcType="TINYINT" property="isRecommended" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="package_name" jdbcType="VARCHAR" property="packageName" />
+    <result column="google_play_link" jdbcType="VARCHAR" property="googlePlayLink" />
+    <result column="href" jdbcType="VARCHAR" property="href" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+
+
+
+
+</mapper>

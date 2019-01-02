@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springBootDemo.learn.dao.SubTaskInfoMapper">
+  <resultMap id="BaseResultMap" type="com.example.springBootDemo.learn.domain.SubTaskInfo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="task_id" jdbcType="INTEGER" property="taskId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="duration" jdbcType="INTEGER" property="duration" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="interval" jdbcType="INTEGER" property="interval" />
+    <result column="coin_rate" jdbcType="INTEGER" property="coinRate" />
+    <result column="backup_rate" jdbcType="INTEGER" property="backupRate" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+
+
+
+</mapper>
